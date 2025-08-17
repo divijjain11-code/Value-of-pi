@@ -1,9 +1,14 @@
 import math
-n = int(input("Enter the value of n: "))
-i = int(0)
+x = 2*math.sqrt(2)/9801
+n = int(input("Enter value of n: "))
+i = 0
 total = 0
 for i in range(0,n):
-    x = (math.pow(-1,i))/((2*i)+1)
-    total += x
+    y = math.factorial(4*i)
+    z = 1103 + 26390*i
+    a = math.pow(math.factorial(i),4)
+    b = math.pow(396, 4*i)
+    c = (x*(y*z))/(a*b)
     i += 1
-print(total*4)
+    total += c
+print(1/total)
